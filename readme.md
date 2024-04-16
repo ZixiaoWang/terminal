@@ -1,1 +1,3 @@
-## This is readme
+## Welcome to Terminal
+
+[![Watch the demo](./Demo.png)](./Demo.mov)
