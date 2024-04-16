@@ -4,7 +4,7 @@ var CURRENT_DIRECTORY = [];
 var structure = JSON.parse(JSON.stringify(DEFAULT_STRUCTURE));
 var GITHUB = "https://github.com/ZixiaoWang";
 var LINKEDIN = "https://www.linkedin.com/in/jacky-w-57a59b59/";
-var PATH = "";
+var PATH = "/terminal";
 
 function init() {
   const command = $("#command");
