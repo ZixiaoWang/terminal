@@ -1,0 +1,159 @@
+:root {
+  --input-color: #f1f1f1;
+  --background-color: #191919;
+}
+
+html, body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family:  monospace;
+  color: var(--input-color);
+  position: relative;
+}
+
+.terminal {
+  width: 100vw;
+  height: 100vh;
+  min-width: 900px;
+  position: fixed;
+  background-color: var(--background-color);
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 0px 12px;
+  box-shadow: 0px 0px 24px rgba(0,0,0, 0.6);
+}
+
+input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  color: var(--input-color);
+  padding: 0px;
+}
+
+#commandline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+#editorcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+#editor {
+  width: 100%;
+  height: calc(100% - 34px);
+  background-color: var(--background-color);
+  color: var(--input-color);
+  outline: none;
+  padding-left: 50px;
+  padding-right: 12px;
+  border: none;
+}
+
+#editorline {
+  width: 40px;
+  height: calc(100% - 34px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: green;
+  text-align: right;
+  padding-right: 5px;
+  margin-right: 5px;
+  padding-top: 2px;
+}
+#editorline > div {
+  height: 16.5px;
+}
+
+#editorcommand {
+  width: 100%;
+  border-top: 1px solid #333;
+  padding: 8px 4px;
+  background-color: var(--background-color);
+}
+
+.block {
+  margin-top: 4px;
+}
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0px;
+  max-width: 1400px;
+}
+
+.media {
+  width: 200px;
+  height: 232.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 2px dashed transparent;
+  padding: 4px;
+  align-items: center;
+}
+
+.media:hover {
+  cursor: pointer;
+  border-color: var(--input-color);
+}
+
+.media > img {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.media > .media-name {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+}
+
+.pre {
+  white-space: pre-wrap;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --input-color: #f1f1f1;
+    --background-color: #191919;
+  }
+}
+
+body[data-theme="light"] {
+  --input-color: #232323;
+  --background-color: white;
+}
+
+body[data-theme="old"] {
+  --input-color: green;
+  --background-color: black;
+}
+
+body[data-theme="old"] input {
+  font-family: arcade;
+}

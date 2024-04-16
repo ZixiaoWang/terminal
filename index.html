@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZiXiao Wang</title>
+    <link rel="stylesheet" href="./terminal.css" />
+  </head>
+  <body>
+    <div class="terminal">
+      <div class="canvas">
+        <div class="history"></div>
+        <div class="block" id="commandline">
+          <div class="identifier" id="identifier"></div>
+          <input type="text" id="command" />
+        </div>
+      </div>
+    </div>
+    <template id="editortemplate">
+      <div class="editor" id="editorcontainer">
+        <textarea name="editor" id="editor"></textarea>
+        <div class="editor-line" id="editorline"></div>
+        <input type="text" id="editorcommand" />
+      </div>
+    </template>
+    <script src="./terminal-constrant.js"></script>
+    <script src="./terminal-main.js"></script>
+    <script src="./terminal-commands.js"></script>
+  </body>
+</html>
