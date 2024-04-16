@@ -1,3 +1,11 @@
 ## Welcome to Terminal
 
-[![Watch the demo](./Demo.png)](./Demo.mov)
+A personal project, purly for fun, didn't use any JS frameworks but VanillaJS.
+
+<video controls width="900">
+    <source src="./Demo.mp4">
+</video>
+
+<hr />
+
+Love & Peace
