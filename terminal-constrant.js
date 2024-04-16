@@ -87,10 +87,10 @@ const DEFAULT_STRUCTURE = {
 (() => {
   [
     ...Object.keys(DEFAULT_STRUCTURE.photography).map(
-      (filename) => "/photography/" + filename
+      (filename) => "/terminal/photography/" + filename
     ),
     ...Object.keys(DEFAULT_STRUCTURE.cats).map(
-      (filename) => "/cats/" + filename
+      (filename) => "/terminal/cats/" + filename
     ),
   ].forEach((path) => {
     const link = document.createElement("link");
